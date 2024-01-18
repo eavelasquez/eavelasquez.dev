@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 
+import Badge from '@/components/Badge.astro'
 import SectionContainer from '@/components/SectionContainer.astro'
 ---
 
@@ -10,10 +11,17 @@ import SectionContainer from '@/components/SectionContainer.astro'
 >
   <main class="px-4">
     <SectionContainer class="py-44 pb-32">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="/eavelasquez.webp"
+        alt="eavelasquez photo"
+      />
       <h1
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, I'm eavelasquez
+        Hey, I'm eavelasquez <a class="flex justify-center items-center hover:scale-105 transition" href="https://linkedin.com/in/eavelasquez" target="_blank" rel="noopener">
+          <Badge>Available to work</Badge>
+        </a>
       </h1>
     </SectionContainer>
   </main>
