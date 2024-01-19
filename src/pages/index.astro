@@ -2,6 +2,9 @@
 import Layout from '@/layouts/Layout.astro'
 
 import Badge from '@/components/Badge.astro'
+import BriefcaseIcon from '@/components/icons/Briefcase.astro'
+import CodeIcon from '@/components/icons/Code.astro'
+import ProfileCheckIcon from '@/components/icons/ProfileCheck.astro'
 import SectionContainer from '@/components/SectionContainer.astro'
 ---
 
@@ -50,6 +53,8 @@ import SectionContainer from '@/components/SectionContainer.astro'
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
+        <BriefcaseIcon class="size-7" />
+
         Experience
       </h2>
     </SectionContainer>
@@ -58,6 +63,8 @@ import SectionContainer from '@/components/SectionContainer.astro'
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
+        <CodeIcon class="size-7" />
+
         Projects
       </h2>
     </SectionContainer>
@@ -66,6 +73,7 @@ import SectionContainer from '@/components/SectionContainer.astro'
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
+        <ProfileCheckIcon class="size-7" />
         About me
       </h2>
     </SectionContainer>
