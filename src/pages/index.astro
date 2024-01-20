@@ -4,8 +4,12 @@ import Layout from '@/layouts/Layout.astro'
 import Badge from '@/components/Badge.astro'
 import BriefcaseIcon from '@/components/icons/Briefcase.astro'
 import CodeIcon from '@/components/icons/Code.astro'
+import GitHubIcon from '@/components/icons/GitHub.astro'
+import LinkedInIcon from '@/components/icons/LinkedIn.astro'
+import MailIcon from '@/components/icons/Mail.astro'
 import ProfileCheckIcon from '@/components/icons/ProfileCheck.astro'
 import SectionContainer from '@/components/SectionContainer.astro'
+import SocialPill from '@/components/SocialPill.astro'
 ---
 
 <Layout
@@ -47,6 +51,21 @@ import SectionContainer from '@/components/SectionContainer.astro'
           Specialized in creating unique solutions.
         </span>
       </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://linkedin.com/in/eavelasquez">
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/eavelasquez">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:estebanvelasquezcardeno@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+          estebanvelasquezcardeno@gmail.com
+        </SocialPill>
+      </nav>
     </SectionContainer>
 
     <SectionContainer id="experience">
